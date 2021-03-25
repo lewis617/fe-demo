@@ -1,0 +1,31 @@
+<style>
+    div {
+        border: 2px solid red;
+        height: 100px;
+       
+    }
+    /* float 不占据位置，后面的非bfc元素补上 */
+    .left{
+        /* float: left; */
+        width: 100px;
+    }
+    /* mid 补上 */
+    .mid{
+        border-color: green;
+        background-color: aquamarine;
+        /* 两种办法让 mid 左右两边留出距离 */
+        /* margin: 0 100px; */
+        /* overflow: hidden; */
+    }
+    .right{
+        width: 100px;
+        float: right;
+        border-color: blue;
+    }
+</style>
+<div>
+    <div class="mid"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+
